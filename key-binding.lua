@@ -17,7 +17,9 @@ end
 -- * Move window to screen
 windowBind({"ctrl", "alt"}, {
   left = wm.throwLeft,
-  right = wm.throwRight
+  right = wm.throwRight,
+  down = wm.throwLeft,
+  up = wm.throwRight
 })
 
 -- * Set Window Position on screen
