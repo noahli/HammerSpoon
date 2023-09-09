@@ -98,6 +98,16 @@ module.throwRight = function ()
   this.window:moveOneScreenEast(true, true)
 end
 
+module.throwUp = function ()
+  local this = windowMeta.new()
+  this.window:moveOneScreenNorth(true, true)
+end
+
+module.throwDown = function ()
+  local this = windowMeta.new()
+  this.window:moveOneScreenSouth(true, true)
+end
+
 module.leftHalf = function ()
   local this = windowMeta.new()
   local cell = Cell(0, 0, 0.5 * this.screenGrid.w, this.screenGrid.h)
